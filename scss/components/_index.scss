@@ -1,0 +1,36 @@
+@forward '../components/variables';
+@forward '../components/buttons';
+@forward '../components/header';
+@forward '../components/container';
+@forward '../components/form';
+@forward '../components/buttons';
+
+.main {
+    height: 100vh;
+}
+.hidden {
+    display: none;
+    position: absolute;
+    left: -1000%;
+}
+.shown {
+    display: block;
+    position: relative;
+}
+.start-state {
+    display: grid;
+    grid-template-rows: 5fr 1fr 4fr;
+    justify-content: center;
+    align-items: flex-end;
+    .btn {
+        margin-inline: auto;
+    }
+}
+.player-select-state {
+    display: grid;
+    grid-template-rows: 200px 1fr;
+}
+.board-state {
+    display: grid;
+    grid-template-rows: 200px 1fr;
+}

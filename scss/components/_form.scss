@@ -1,0 +1,12 @@
+@use '../components/variables' as c;
+
+.player-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 200px;
+    margin-inline: auto;
+    .btn {
+        width: auto;
+    }
+}

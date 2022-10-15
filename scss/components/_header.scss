@@ -1,0 +1,13 @@
+@use '../components/variables' as c;
+
+.header-on {
+    padding: 2em 5em;
+    text-align: center;
+    background-color: c.$primary;
+    color: white;
+    margin-bottom: 5em;
+}
+
+.header-off {
+    font-size: 3rem;
+}

@@ -1,0 +1,14 @@
+@use '../components/variables' as c;
+
+.btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: c.$accent;
+    color: white;
+    width: 9em;
+    height: min-content;
+    border: none;
+    padding: 1em 1.5em;
+}

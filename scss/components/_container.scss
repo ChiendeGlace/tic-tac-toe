@@ -1,0 +1,31 @@
+@use '../components/variables' as c;
+
+.player-selection-btns {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 2em;
+}
+
+.board {
+    display: grid;
+    margin-bottom: 2em;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 16px;
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: c.$primary;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+}

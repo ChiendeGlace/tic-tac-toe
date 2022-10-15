@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/scss/main.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="main start-state">
+        <header class="header-off">
+            <h1>Tic Tac Toe</h1>
+        </header>
+        <button class="btn" id="start-btn">Start Game</button>
+        <div class="player-selection">
+            <div class="player-selection-btns  hidden">
+                <button class="btn" id="ai-btn">AI Bot</button>
+                <button class="btn" id="player-btn">Two Players</button>
+            </div>
+            <form class="player-form hidden">
+                <label for="player1">Player1</label>
+                <input type="text" id="player1" required>
+                <label for="player2">Player2</label>
+                <input type="text" id="player2" required>
+                <button class="btn" type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+        <div class="container">
+            <div class="board hidden">
+                <div class="board-square"></div>
+                <div class="board-square"></div>
+                <div class="board-square"></div>
+                <div class="board-square"></div>
+                <div class="board-square"></div>
+                <div class="board-square"></div>
+                <div class="board-square"></div>
+                <div class="board-square"></div>
+                <div class="board-square"></div>
+            </div>
+            <button class="btn hidden" id="restart">Restart</button>
+        </div>
+    </div>
+
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

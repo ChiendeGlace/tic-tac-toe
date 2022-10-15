@@ -1,0 +1,108 @@
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  color: white;
+  width: 9em;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  border: none;
+  padding: 1em 1.5em;
+}
+
+.header-on {
+  padding: 2em 5em;
+  text-align: center;
+  background-color: purple;
+  color: white;
+  margin-bottom: 5em;
+}
+
+.header-off {
+  font-size: 3rem;
+}
+
+.player-selection-btns {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 2em;
+}
+
+.board {
+  display: grid;
+  margin-bottom: 2em;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 16px;
+}
+.board div {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+}
+
+.player-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 200px;
+  margin-inline: auto;
+}
+.player-form .btn {
+  width: auto;
+}
+
+.main {
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+  position: absolute;
+  left: -1000%;
+}
+
+.shown {
+  display: block;
+  position: relative;
+}
+
+.start-state {
+  display: grid;
+  grid-template-rows: 5fr 1fr 4fr;
+  justify-content: center;
+  align-items: flex-end;
+}
+.start-state .btn {
+  margin-inline: auto;
+}
+
+.player-select-state {
+  display: grid;
+  grid-template-rows: 200px 1fr;
+}
+
+.board-state {
+  display: grid;
+  grid-template-rows: 200px 1fr;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=main.css.map */
