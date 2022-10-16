@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2500936872.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/scss/main.css">
     <title>Tic Tac Toe</title>
 </head>
@@ -13,8 +14,8 @@
             <h1>Tic Tac Toe</h1>
         </header>
         <button class="btn" id="start-btn">Start Game</button>
-        <div class="player-selection">
-            <div class="player-selection-btns  hidden">
+        <div class="player-selection hidden">
+            <div class="player-selection-btns">
                 <button class="btn" id="ai-btn">AI Bot</button>
                 <button class="btn" id="player-btn">Two Players</button>
             </div>
@@ -26,8 +27,13 @@
                 <button class="btn" type="submit" id="submit">Submit</button>
             </form>
         </div>
-        <div class="container">
-            <div class="board hidden">
+        <div class="container hidden">
+            <div class="container-text">
+                <p id="player1-text"></p>
+                <p id="player-turn"></p>
+                <p id="player2-text"></p>
+            </div>
+            <div class="board">
                 <div class="board-square"></div>
                 <div class="board-square"></div>
                 <div class="board-square"></div>
@@ -38,7 +44,10 @@
                 <div class="board-square"></div>
                 <div class="board-square"></div>
             </div>
-            <button class="btn hidden" id="restart">Restart</button>
+            <div class="container-buttons">
+                <button class="btn" id="restart">Restart</button>
+                <button class="btn" id="go-back">Player selection</button>
+            </div>
         </div>
     </div>
 
