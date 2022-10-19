@@ -3,20 +3,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: green;
+  background-color: #65a30d;
   color: white;
   width: 9em;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
+  font-weight: 700;
+  font-size: 16px;
   border: none;
+  -webkit-animation: name duration timing-function delay iteration-count direction fill-mode;
+          animation: name duration timing-function delay iteration-count direction fill-mode;
   padding: 1em 1.5em;
+}
+
+header h1 {
+  font-size: 3rem;
 }
 
 .header-on {
   padding: 2em 5em;
   text-align: center;
-  background-color: purple;
+  background-color: #c084fc;
   color: white;
   margin-bottom: 5em;
 }
@@ -44,7 +52,7 @@
 .board div {
   width: 100px;
   height: 100px;
-  background-color: purple;
+  background-color: #7e22ce;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -53,18 +61,30 @@
   font-size: 2.5rem;
 }
 
+.text-big {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #65a30d;
+  transition: 2s;
+  transform: scale(1.25);
+}
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.container p {
+  font-size: 1.125rem;
+}
 
 .container-text {
   margin-bottom: 2em;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 64px;
 }
 
 .container-buttons {
@@ -84,6 +104,13 @@
 }
 .player-form .btn {
   width: auto;
+}
+.player-form input {
+  padding: 0.5em 1em;
+}
+
+* {
+  font-family: "Lato", sans-serif;
 }
 
 .main {

@@ -5,6 +5,9 @@
 @forward '../components/form';
 @forward '../components/buttons';
 
+* {
+    font-family: 'Lato', sans-serif;
+}
 .main {
     height: 100vh;
 }
